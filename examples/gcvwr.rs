@@ -4,6 +4,7 @@
 use std::io;
 
 fn main() {
+    println!("test aja");
     let mut line1 = String::new();
     io::stdin().read_line(&mut line1).expect("Failed to read line");
     let numbers1 = line1.trim().split_whitespace().map(|x| x.parse::<i32>().unwrap()).collect::<Vec<i32>>();
